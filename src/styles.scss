@@ -254,6 +254,12 @@ body{
     				margin-top: 10px;
     			}
     		}
+
+    		.middle{
+    			img{
+    				width: 160px;
+    			}
+    		}
     	}
 
     	div.content{
@@ -294,6 +300,12 @@ body{
     					.ui.input,
     					.ui.selection{
     						width: 100%;
+    						margin-bottom: 10px;
+
+    						&:last-child{
+    							margin-bottom: 0;
+    							display: none;
+    						}
     					}
     				}
     			}
