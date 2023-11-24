@@ -61,9 +61,14 @@ export default function App() {
   };
 
   useEffect(() => {
-    $('.etapa6.active .ui.dropdown .menu .item').on('click',function(){
-      var thisSelected = $(this).text();
-      $('.etapa6.active input#user_grau').val(thisSelected);
+    $('.etapa6').on('click', '.ui.dropdown .menu .item' ,function(){
+      var _this = $(this);
+
+      setTimeout(function(){
+        var thisSelected = _this.parents('.ui.dropdown').find('.divider').html();
+        console.log('thisSelected >> ',thisSelected);
+        $('.etapa6.active input#user_grau').val(thisSelected);
+      },200);
     });
 
     $('button.proximo').on('click',function(){
@@ -348,7 +353,7 @@ export default function App() {
             <li className="aluno">Breno Henrique</li>
             <li className="aluno">Cristiane Santana </li>
             <li className="aluno">Jenifer Machado</li>
-            <li className="aluno">Tayná de Paula</li>
+            <li className="aluno">Tayná Oliveira</li>
             <li className="aluno">Yuri Aguiar</li> 
 
             <li className="aluno dev">

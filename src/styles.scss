@@ -190,7 +190,7 @@ body{
 	    		}
 
 	    		input[name="user_grau"]{
-	    			
+	    			display: none;
 	    		}
     		}
     	}
@@ -240,5 +240,77 @@ body{
 	            }
 	        }
 	    }
+    }
+
+    @media screen and (max-width: 1024px) {
+    	header#header{
+    		.topHeader{
+    			flex-direction: column;
+    			height: inherit;
+    			padding-top: 10px;
+    			padding-bottom: 10px;
+
+    			.right{
+    				margin-top: 10px;
+    			}
+    		}
+    	}
+
+    	div.content{
+    		padding-left: 20px;
+    		padding-right: 20px;
+    		margin-top: -15%;
+
+    		.etapa{
+    			.pergunta{
+					line-height: 140%;
+				}
+
+    			.wrap{
+    				flex-direction: column;
+
+    				.opcao{
+    					margin-bottom: 20px;
+    					margin-left: 0;
+    					margin-right: 0;
+    				}
+
+    				button.button{
+    					margin-bottom: 20px;
+    				}
+    			}
+
+    			&.etapa6{
+    				.wrap{
+    					margin-top: 10px;
+
+    					.ui.input,
+    					.ui.selection{
+    						width: 100%;
+    					}
+    				}
+    			}
+    		}
+    	}
+
+    	footer#footer{
+    		ul{
+	            margin: 0;
+	            padding: 0;
+	            justify-content: flex-start;
+	            
+	            li{
+	                width: 50%;
+	                margin-left: 0;
+	                margin-right: 0;
+	                text-align: center;
+
+	                &.faculdade{
+	                	padding-left: 20px;
+	                	padding-right: 20px;
+	                }
+	            }
+	        }
+    	}
     }
 }
