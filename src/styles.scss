@@ -259,15 +259,22 @@ body{
     	div.content{
     		padding-left: 20px;
     		padding-right: 20px;
-    		margin-top: -15%;
+    		margin-top: -10%;
 
     		.etapa{
     			.pergunta{
 					line-height: 140%;
+					font-size: 18px;
 				}
 
-    			.wrap{
+				textarea{
+					height: 100px;
+					margin-top: 20px;
+				}
+
+    			div.wrap{
     				flex-direction: column;
+    				margin-top: 20px;
 
     				.opcao{
     					margin-bottom: 20px;
